@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Aloja';
-  src: url('./src/assets/Aloja-Light.woff') format('woff');
+  src: url('/Aloja-Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +34,7 @@ body{
     left: 0;
     width: 100%;
     height: 160px;
-    background-image: url("./src/assets/squiggle.png");
+    background-image: url("/squiggle.png");
     background-repeat: repeat;
     margin-top: -160px;
 }
@@ -63,7 +63,7 @@ body{
 }
 
 .upcoming-container, .explore-container{
-    background-image: url('./src/assets/checker.png');
+    background-image: url('/checker.png');
     background-repeat: repeat;
 } 
 

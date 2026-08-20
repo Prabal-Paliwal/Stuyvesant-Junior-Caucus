@@ -6,7 +6,7 @@ import "./style.css"
 export function App() {
   let timelineContent = ['Closest Event', 'Closer Event', 'Close Event'];
   return <>
-  <Hero title="./src/assets/hero_title.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./src/assets/school_background.png')"></Hero>
+  <Hero title="/hero_title.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/school_background.png')"></Hero>
   <Squiggle></Squiggle>
   <div className="vision-container containers">
   <Heading word="Our Vision"></Heading>
@@ -17,7 +17,7 @@ export function App() {
   <Heading word="Upcoming"></Heading>
   <div className="upcoming-grid ">
     <div></div>
-    <div><img src="./src/assets/time-line.png" className="time-line"></img></div>
+    <div><img src="/time-line.png" className="time-line"></img></div>
     <div></div>
     <div></div>
     <div></div>
@@ -34,9 +34,9 @@ export function App() {
   <div className="achievement-container containers">
   <Heading word="Achievements"></Heading>
   <div className="achievement-card-container">
-    <div className="achievement-card"><img src="./src/assets/trophy.png"></img><span>100h+ Screen Time</span></div>
-    <div className="achievement-card"><img src="./src/assets/trophy.png"></img><span>Another Stat</span></div>
-    <div className="achievement-card"><img src="./src/assets/trophy.png"></img><span>Stat Another</span></div>
+    <div className="achievement-card"><img src="/trophy.png"></img><span>100h+ Screen Time</span></div>
+    <div className="achievement-card"><img src="/trophy.png"></img><span>Another Stat</span></div>
+    <div className="achievement-card"><img src="/trophy.png"></img><span>Stat Another</span></div>
   </div>
   </div>
   <Squiggle></Squiggle>
