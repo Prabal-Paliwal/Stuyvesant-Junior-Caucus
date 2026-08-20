@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Aloja';
+  src: url('./src/assets/Aloja-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    background: #e3f3ff;
+    overflow-x: hidden;
+}
+
+.hero{
+    width: 100%;
+    height: calc(100vh + 82px);
+    background-position: center !important;
+    background-size: cover !important;
+    display: grid;
+}
+
+.hero_title{
+    max-width: min(calc(100% - 20px), 700px);
+    place-self:center;
+}
+
+.squiggle{
+    position:  relative;
+    top: 79px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background-image: url("./src/assets/squiggle.png");
+    background-repeat: repeat;
+    margin-top: -160px;
+}
+
+.heading{
+    font-family: 'Aloja';
+    text-align: center;
+    color: #b0c7dd;
+    -webkit-text-stroke: 2px #6f95ba; 
+    font-size: clamp(2rem, 5vw + 2rem, 3.5rem);
+}
+
+.text{
+    font-family: 'cursive';
+    font-size: clamp(1rem, 5vw + 1rem, 1rem);
+    color:#6f95ba;
+    width: min(calc(100% - 50px), 500px);
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+.containers{ 
+    padding-top: 150px;
+    width: 100% !important;
+    padding-bottom: 150px;
+}
+
+.upcoming-container, .explore-container{
+    background-image: url('./src/assets/checker.png');
+    background-repeat: repeat;
+} 
+
+.upcoming-grid{
+    display : grid;
+    grid-template-columns: 1fr 50px 1fr;
+    grid-template-rows: repeat(4,calc(100% / 4));
+    width: min(100%, 500px);
+    height: 931px;
+    margin:0 auto 150px auto;
+}
+
+.time-line{
+    position: relative;
+    top: 93px;
+}
+
+.upcoming-card{
+    background: whitesmoke;
+    margin: 0 10px 0 10px;
+    color: #6f95ba;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+.achievement-card > img{
+    width: 100%;
+    height: auto;
+}
+
+.achievement-card{
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    color: #6f95ba;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.achievement-card-container{
+    display:grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: min(100%, 1000px);
+    margin: 50px auto 0 auto;
+}
+
+.link-container{
+    width: min(100%, 500px);
+    margin: auto;
+    table-layout:fixed;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+tr > td{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+tr > td:hover{
+    text-decoration: underline;
+}
+
+tr > td:hover{
+    text-decoration: underline;
+}
+
+.explore-title:hover{
+    text-decoration: none !important;
+}
