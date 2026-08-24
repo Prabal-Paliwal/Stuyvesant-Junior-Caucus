@@ -24,7 +24,7 @@ body{
 }
 
 .hero_title{
-    max-width: min(calc(100% - 20px), 700px);
+    max-width: min(calc(100% - 20px), 800px);
     place-self:center;
 }
 
@@ -62,10 +62,10 @@ body{
     padding-bottom: 150px;
 }
 
-.upcoming-container, .explore-container{
+.checker{
     background-image: url('/checker.png');
     background-repeat: repeat;
-} 
+}
 
 .upcoming-grid{
     display : grid;
@@ -104,12 +104,16 @@ body{
     font-weight: bold;
 }
 
-.achievement-card-container{
+.achievement-card-container, .cabinet-card-container{
     display:grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: min(100%, 1000px);
     margin: 50px auto 0 auto;
+}
+
+.cabinet-card-container-smaller{
+    width: min(100%, 666px);
 }
 
 .link-container{
@@ -135,4 +139,115 @@ tr > td:hover{
 
 .explore-title:hover{
     text-decoration: none !important;
+}
+
+.cabinet-card-container{
+    gap: 50px;
+}
+
+.cabinet-card{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px 20px 5px 20px;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    border-radius: 40px;
+}
+
+.dark{
+    background: #b4d5ee;
+    color: #547fa8;
+    box-shadow: 5px 5px, 10px 10px #547fa87c;
+}
+
+.light{
+    background:white;
+    color: #b4d5ee;
+    box-shadow: 5px 5px, 10px 10px #b4d5ee7b;
+}
+
+.front-card > img{
+    border-radius: 20px;
+}
+
+.cabinet-card > div > button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dark > div > button:hover{
+    background: #547fa8;
+    color: #b4d5ee;
+}
+
+.light > div > button:hover{
+    background: #b4b4b4;
+    color: white;
+}
+
+.upcoming-container{
+    display:grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: min(100%, 666px);
+    margin: 50px auto 0 auto;
+    gap: 40px;
+}
+
+.events-card{
+    width: 250px;
+    height: 240px;
+    background: url('/event.png');
+    background-size: contain;
+    background-position: center;
+    font-size: 1rem;
+    display: grid;
+    grid-template-rows: 100px 50px 30px 20px;
+    grid-template-columns: 1fr;
+    place-items:center;
+}
+
+.events-card > span{
+    position: relative;
+    left: -7px;
+    font-weight: bold;
+    color: #547fa8;
+}
+
+.resource-card-container{
+    display:grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: min(100%, 1000px);
+    margin: 50px auto 0 auto;
+    gap: 40px;
+}
+
+.resource-card{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 15px 20px 5px 20px;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    border-radius: 40px;
+}
+
+.resource-card > a{
+    position: relative;
+    top: -3px;
+}
+
+.resource-card > a:hover{
+    text-decoration: underline;
+}
+
+.resource-card > img{
+    border-radius: 20px;
 }
