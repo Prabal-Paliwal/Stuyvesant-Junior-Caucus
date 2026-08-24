@@ -2,7 +2,6 @@ import Hero from "./hero.tsx"
 import Footer from './footer.tsx'
 import Squiggle from "./squiggle.tsx"
 import Heading from "./heading.tsx"
-import { Link } from 'react-router-dom';
 import "./style.css"
 
 function Jprom(){
