@@ -13,7 +13,7 @@ import Jprom from "./Jprom.tsx"
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, 
+    element: <App />,
   },
   {
     path: "/cabinet",
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
   {
     path: "/jprom",
     element: <Jprom/>,
-  }
+  },
 ]);
 
 const rootElement = document.getElementById('root')!; 

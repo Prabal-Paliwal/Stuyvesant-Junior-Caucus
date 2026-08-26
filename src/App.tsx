@@ -3,10 +3,12 @@ import Footer from './footer.tsx'
 import Squiggle from "./squiggle.tsx"
 import Heading from "./heading.tsx"
 import { Link } from 'react-router-dom';
+import Nav from "./Nav.tsx";
 import "./style.css"
 function App() {
   let timelineContent = ['Closest Event', 'Closer Event', 'Close Event'];
   return <>
+  <Nav></Nav>
   <Hero title="/hero_title.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/school_background.png')"></Hero>
   <Squiggle></Squiggle>
   <div className="vision-container containers">

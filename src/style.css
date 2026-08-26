@@ -5,9 +5,15 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 html,body{
     margin: 0;
     padding: 0;
+}
+
+*{
+    font-family: 'Itim', cursive;
 }
 body{
     width: 100vw;
@@ -250,4 +256,59 @@ tr > td:hover{
 
 .resource-card > img{
     border-radius: 20px;
+}
+
+.navbar{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+.navbar-pill{
+    background: white;
+    color: #547fa8;
+    padding: 8px 16px;
+    border-radius: 40px;
+    box-shadow: 5px 5px, 10px 10px #547fa87c;
+}
+
+.navbar-brand{
+    font-family: 'Aloja';
+    font-size: 1.5rem;
+    color: #547fa8;
+    padding: 0 8px;
+    white-space: nowrap;
+}
+
+.navbar-link{
+    border-radius: 30px;
+}
+
+.navbar-dropdown{
+    display: grid;
+    gap: 4px;
+    padding: 6px;
+}
+
+.past-event-container{
+    place-items: center;
+}
+
+.past-event-card{
+    width: 100%;
+    background: none;
+    --tw-ring-shadow: none;
+}
+
+.past-event-titles{
+    font-size : clamp(1rem, 2.5rem, 2.5rem);
+    text-align: center;
+    color: #547fa8;
+    margin-bottom: 20px;
+}
+
+.past-event-image{
+    border-radius: 10%;
 }

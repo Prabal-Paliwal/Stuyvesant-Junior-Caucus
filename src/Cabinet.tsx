@@ -3,10 +3,12 @@ import Footer from './footer.tsx'
 import Squiggle from "./squiggle.tsx"
 import Heading from "./heading.tsx"
 import CabinetCard from "./CabinetCard.tsx";
+import Nav from "./Nav.tsx";
 import "./style.css"
 
 function Cabinet(){
     return <>
+    <Nav></Nav>
     <Hero title="/hero-cabinet.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/school_background.png')"></Hero>
     <Squiggle></Squiggle>
     <div className="containers">
