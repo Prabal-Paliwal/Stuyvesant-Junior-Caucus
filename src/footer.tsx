@@ -1,8 +1,4 @@
-import { Square } from "lucide-react"
-import Heading from "./heading"
-import Squiggle from "./squiggle"
-
-function Footer(){
+    function Footer(){
     return<>
         <div className="containers">
         <h2 className="heading footer-title" style={{textAlign:'start', paddingLeft: '20px'}}>Stuyvesant Junior Caucus</h2>
