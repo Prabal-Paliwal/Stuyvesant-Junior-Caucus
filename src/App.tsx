@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 import Nav from "./Nav.tsx";
 import "./style.css"
 function App() {
-  let timelineContent = ['Closest Event', 'Closer Event', 'Close Event'];
+  let timelineContent = ['9/19', 'Cornell University x Binghamton University', '9/26', 'Cornell Alumni Workshop', '10/14-15', 'Double Day Open House Bake Sale'];
   return <>
   <Nav></Nav>
   <Hero title="/hero_title.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/school_background.png')"></Hero>
   <Squiggle></Squiggle>
   <div className="vision-container containers">
-  <Heading word="Our Vision"></Heading>
+  <Heading word="Our Mission"></Heading>
   <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis ac lectus ac facilisis. Proin euismod molestie urna, ut dapibus orci. Aenean bibendum tortor eu lorem interdum, vitae accumsan dui volutpat. Suspendisse lobortis nulla et massa vehicula, consectetur egestas nulla dapibus. Donec vitae molestie risus. Etiam iaculis molestie neque sed tempor. Suspendisse sagittis elit quis varius semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin fringilla ullamcorper risus sit amet pulvinar.</p>
   </div>
   <Squiggle></Squiggle>
@@ -24,22 +24,22 @@ function App() {
     <div></div>
     <div></div>
     <div></div>
-    <div className="upcoming-card">{timelineContent[0]}</div>
-    <div className="upcoming-card">{timelineContent[1]}</div>
+    <div className="upcoming-card light"><span style={{fontSize: '1.5rem', color:'#6f95ba'}}>{timelineContent[0]}</span><br></br>{timelineContent[1]}</div>
+    <div className="upcoming-card light"><span style={{fontSize: '1.5rem', color:'#6f95ba'}}>{timelineContent[2]}</span><br></br>{timelineContent[3]}</div>
     <div></div>
     <div></div>
     <div></div>
     <div></div>
-    <div className="upcoming-card">{timelineContent[2]}</div>
+    <div className="upcoming-card light"><span style={{fontSize: '1.5rem', color:'#6f95ba'}}>{timelineContent[4]}</span><br></br>{timelineContent[5]}</div>
   </div>
   </div>
   <Squiggle></Squiggle>
   <div className="achievement-container containers">
   <Heading word="Achievements"></Heading>
   <div className="achievement-card-container">
-    <div className="achievement-card"><img src="/trophy.png"></img><span>100h+ Screen Time</span></div>
-    <div className="achievement-card"><img src="/trophy.png"></img><span>Another Stat</span></div>
-    <div className="achievement-card"><img src="/trophy.png"></img><span>Stat Another</span></div>
+    <div className="achievement-card"><img src="/trophy.png"></img><span>$2000 raised</span></div>
+    <div className="achievement-card"><img src="/trophy.png"></img><span>30+ events</span></div>
+    <div className="achievement-card"><img src="/trophy.png"></img><span>6 organizational partnerships</span></div>
   </div>
   </div>
   <Squiggle></Squiggle>
@@ -56,7 +56,7 @@ function App() {
     </tr>
     <tr>
       <td colSpan={5} style={{textAlign: 'end', color:'#425870'}}>Sponsor</td>
-      <td colSpan={4} style={{color: '#36485B'}}><Link to="/jprom">Jprom</Link></td>
+      <td colSpan={4} style={{color: '#36485B'}}><Link to="/jprom">JProm</Link></td>
     </tr>
     <tr>
       <td colSpan={9} style={{textAlign: 'center', color:"#6c6e94"}}><Link to="/contacts">Contact Us</Link></td>

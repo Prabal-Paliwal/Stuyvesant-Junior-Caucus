@@ -14,23 +14,15 @@ function Resources(){
         <div className="containers">
         <Heading word="The Jrnl"></Heading>
         <div className="resource-card-container">
-            <ResourceCard theme="dark" image="/frame.png" title="month" link="https://google.com"></ResourceCard>
-            <ResourceCard theme="dark" image="/frame.png" title="month" link="https://google.com"></ResourceCard>
-            <ResourceCard theme="dark" image="/frame.png" title="month" link="https://google.com"></ResourceCard>
-            <ResourceCard theme="dark" image="/frame.png" title="month" link="https://google.com"></ResourceCard>
-            <ResourceCard theme="dark" image="/frame.png" title="month" link="https://google.com"></ResourceCard>
-            <ResourceCard theme="dark" image="/frame.png" title="month" link="https://google.com"></ResourceCard>
-            <ResourceCard theme="dark" image="/frame.png" title="month" link="https://google.com"></ResourceCard>
+            <ResourceCard theme="dark" image="/septJrnl.png" title="September" link="http://canva.com/design/DAHTFC8ZWNU/XvR-CWwYgqQ8txaLt74-EQ/edit?utm_content=DAHTFC8ZWNU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"></ResourceCard>
         </div>
         </div>
         <Squiggle></Squiggle>
         <div className="containers checker">
         <Heading word="Guides"></Heading>
         <div className="resource-card-container">
-            <ResourceCard theme="light" image="/frame.png" title="SAT Guide" link="https://docs.google.com/document/d/1zVenB09OnC9vzlqypfGG6tfvekDUwuYJOTSIeZg-a-8/edit?tab=t.0#heading=h.w9zjfxd0rlqn"></ResourceCard>
-            <ResourceCard theme="light" image="/frame.png" title="name" link="https://google.com"></ResourceCard>
-            <ResourceCard theme="light" image="/frame.png" title="name" link="https://google.com"></ResourceCard>
-            <ResourceCard theme="light" image="/frame.png" title="name" link="https://google.com"></ResourceCard>
+            <ResourceCard theme="light" image="/SATguide.png" title="SAT Guide" link="https://docs.google.com/document/u/6/d/14LGR22-VaqzRaPoVk_SQ0vITS0kESep3dJPFgeVKMVM/edit"></ResourceCard>
+            <ResourceCard theme="light" image="/PSATguide.png" title="PSAT Guide" link="https://docs.google.com/document/d/1QHRI5xTgOECExorG5juGvlEWQFNd3qZpTA-EwFTfyIk/edit?tab=t.0#heading=h.ts9ih8939d5z"></ResourceCard>
         </div>
         </div>
         <Squiggle></Squiggle>

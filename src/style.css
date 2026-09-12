@@ -5,14 +5,14 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-
 @media (width <= 550px) {
   .footer-container > div{
     place-self: center !important;
+    padding-left: 0px !important;
   }
   .footer-title{
     text-align: center !important;
+    padding-left: 0px !important;
   }
 }
 
@@ -22,7 +22,7 @@ html,body{
 }
 
 *{
-    font-family: 'Itim', cursive;
+    font-family: 'Nunito', cursive;
 }
 body{
     width: 100vw;
@@ -97,12 +97,14 @@ body{
 }
 
 .upcoming-card{
-    background: whitesmoke;
+    background: white;
     margin: 0 10px 0 10px;
-    color: #6f95ba;
+    color: #7195b1;
     text-align: center;
     border-radius: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding: 15px;
+    padding-top: 30px;
 }
 
 .achievement-card > img{
@@ -186,6 +188,31 @@ tr > td:hover{
 
 .front-card > img{
     border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.cabinet-bio{
+    margin: 0;
+    height: 210px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 1.3;
+    padding-right: 8px;
+}
+
+.cabinet-bio::-webkit-scrollbar{
+    width: 6px;
+}
+
+.cabinet-bio::-webkit-scrollbar-thumb{
+    background: #547fa8;
+    border-radius: 10px;
+}
+
+.cabinet-bio::-webkit-scrollbar-track{
+    background: transparent;
 }
 
 .cabinet-card > div > button{
@@ -221,7 +248,7 @@ tr > td:hover{
     background-position: center;
     font-size: 1rem;
     display: grid;
-    grid-template-rows: 100px 50px 30px 20px;
+    grid-template-rows: 80px 70px 30px 20px;
     grid-template-columns: 1fr;
     place-items:center;
 }
@@ -265,6 +292,8 @@ tr > td:hover{
 
 .resource-card > img{
     border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .navbar{
@@ -370,4 +399,21 @@ tr > td:hover{
 
 a:hover{
     text-decoration: underline;
+}
+
+.suggestion-form-container{
+    width: min(100% - 40px, 700px);
+    margin: 50px auto 0 auto;
+    color: #547fa8;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px, 10px 10px #547fa87c;
+}
+
+.suggestion-form{
+    display: block;
+    width: 100%;
+    height: 720px;
+    border: 0;
 }
