@@ -5,7 +5,7 @@ import Heading from "./heading.tsx"
 import EventsCard from "./EventsCard.tsx";
 import Nav from "./Nav.tsx";
 import "./style.css"
-import CarouselDemo from "./Carousel.tsx";
+// import CarouselDemo from "./Carousel.tsx";
 
 function Events(){
     return <>
