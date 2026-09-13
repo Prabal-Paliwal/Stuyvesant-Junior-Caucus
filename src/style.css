@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @font-face {
   font-family: 'Aloja';
   src: url('/Aloja-Light.woff') format('woff');
@@ -22,7 +24,7 @@ html,body{
 }
 
 *{
-    font-family: 'Nunito', cursive;
+    font-family: "Nunito";
 }
 body{
     width: 100vw;
@@ -63,7 +65,6 @@ body{
 }
 
 .text{
-    font-family: 'cursive';
     font-size: clamp(1rem, 5vw + 1rem, 1rem);
     color:#6f95ba;
     width: min(calc(100% - 50px), 500px);
