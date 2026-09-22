@@ -13,7 +13,11 @@ function App() {
   <Squiggle></Squiggle>
   <div className="vision-container containers">
   <Heading word="Our Mission"></Heading>
-  <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis ac lectus ac facilisis. Proin euismod molestie urna, ut dapibus orci. Aenean bibendum tortor eu lorem interdum, vitae accumsan dui volutpat. Suspendisse lobortis nulla et massa vehicula, consectetur egestas nulla dapibus. Donec vitae molestie risus. Etiam iaculis molestie neque sed tempor. Suspendisse sagittis elit quis varius semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin fringilla ullamcorper risus sit amet pulvinar.</p>
+  <div className="mission-card">
+  <p>Our mission as the Junior Caucus is to make Junior Year less stressful and more navigable. In order to achieve this, our Presidents and Directors are planning events including workshops, collaborative partnerships, and college tours with external organizations. We also plan to host many fun community-building events throughout the year including many of our most successful events from last year, such as Movie Nights, Slime Making, and Tote Bag Decorating. If you want to show support, please feel free to attend events!</p>
+  <p>Our ultimate goal is to plan the best Junior Prom! Our aim is to ensure that tickets remain affordable so that every student can attend Junior Prom. To do this, we will have many fundraising initiatives planned throughout the year, and we would appreciate any support! Check out the platform to see our planned initiatives! We will continue to work hard throughout the year to support Juniors and ensure an exciting, affordable Junior Prom. Thank you, and here's to an amazing Junior Year!</p>
+  <p className="mission-sign">— Your Junior Caucus<br></br>Elly x Olivia</p>
+  </div>
   </div>
   <Squiggle></Squiggle>
   <div className="checker containers">
