@@ -55,12 +55,12 @@ function App() {
       <td colSpan={5} style={{color: '#6380A1'}}><Link to="/resources">Resources</Link></td>
     </tr>
     <tr>
-      <td className="explore-title" colSpan={6} style={{color: '#212C37', textAlign: 'center', fontSize: '2.3rem'}}>Explore More</td>
-      <td colSpan={3} style={{textAlign: 'start', paddingTop:'5px', color: '#5a6978'}}><Link to="/events">Events</Link></td>
+      <td className="explore-title" colSpan={9} style={{color: '#212C37', textAlign: 'center', fontSize: 'clamp(2.5rem, 8vw, 3.8rem)'}}>Explore More</td>
     </tr>
     <tr>
-      <td colSpan={5} style={{textAlign: 'end', color:'#425870'}}>Sponsor</td>
-      <td colSpan={4} style={{color: '#36485B'}}><Link to="/jprom">JProm</Link></td>
+      <td colSpan={3} style={{textAlign: 'end', color:'#425870'}}>Sponsor</td>
+      <td colSpan={3} style={{textAlign: 'center', color: '#5a6978'}}><Link to="/events">Events</Link></td>
+      <td colSpan={3} style={{textAlign: 'start', color: '#36485B'}}><Link to="/jprom">JProm</Link></td>
     </tr>
     <tr>
       <td colSpan={9} style={{textAlign: 'center', color:"#6c6e94"}}><Link to="/contacts">Contact Us</Link></td>

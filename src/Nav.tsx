@@ -47,7 +47,7 @@ function Nav() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink className="navbar-link px-3 text-base font-bold text-[#547fa8] hover:bg-transparent hover:underline focus:bg-transparent" render={<Link to="/jprom" />}>
-                Jprom
+                JProm
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
