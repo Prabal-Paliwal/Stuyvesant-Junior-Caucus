@@ -15,10 +15,9 @@ function Events(){
     <div className="containers">
     <Heading word="Upcoming"></Heading>
     <div className="upcoming-container">
-        <EventsCard date="Sept 14-15" title="October Double Day Bake Sale" where=""></EventsCard>
-        <EventsCard date="~NOV" title="Dr. Ghatan Speaker Event " where=""></EventsCard>
-        <EventsCard date="~NOV" title="College Readiness Workshop #1" where=""></EventsCard>
-        <EventsCard date="~NOV" title="Summer Program Workshop #1" where=""></EventsCard>
+        <EventsCard date="Oct 14-15" title="Open House Double Day Bake Sale" where=""></EventsCard>
+        <EventsCard date="Oct 29" title="Dr. Ghatan Speaker Event" where=""></EventsCard>
+        <EventsCard date="~Nov" title="College Prep Workshop #1" where=""></EventsCard>
     </div>
     </div>
     <Squiggle></Squiggle>

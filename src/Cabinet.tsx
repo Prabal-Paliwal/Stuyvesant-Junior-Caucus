@@ -20,7 +20,7 @@ function Cabinet(){
     </div>
     <Squiggle></Squiggle>
     <div className="containers checker">
-    <Heading word="Chief of Staff"></Heading>
+    <Heading word="Chiefs of Staff"></Heading>
     <div className="cabinet-card-container cabinet-card-container-smaller">
         <CabinetCard photo="/alvin.jpg" name="Alvin" bio="Hey guys! I'm Alvin, and I am one of your Chiefs of Staff this year. I am so excited to work with you all and especially my cabinet members. Outside of the Junior Caucus, I also play badminton and debate. I can't wait to make this year even more eventful than the last." theme="light"></CabinetCard>
         <CabinetCard photo="/image15.png" name="Yubin" bio="Yoohoo! I'm Yubin and I am so excited to be a Chief of Staff this year for Junior Caucus! Outside of Caucus, you can probably find me at Model UN, STC, Parliamentary Debate, or Dunkin. I am so hyped!" theme="light"></CabinetCard>
@@ -65,8 +65,8 @@ function Cabinet(){
     <Heading word="Media"></Heading>
     <div className="cabinet-card-container">
         <CabinetCard photo="/image14.jpg" name="Amber" bio="Hello! I'm Amber, and I'm the co-director of Media for Stuyvesant's Junior Caucus! I'm part of Stuyvesant's Honor Society and play on my school's varsity fencing and volleyball teams. Outside of sports, I'm a PISTE tutor, and I like volunteering through several club activities, including StuySPAID. I have been working in student government since freshman year and am excited to continue this journey with Elly and Olivia alongside the amazing Junior Caucus team!" theme="dark"></CabinetCard>
-        <CabinetCard photo="/anders.jpg" name="Anders" bio="Hello. My name is Anders. I am a Helvetica enthusiast, student, Avid Traveller (flyporter.com), photographer, and LinkedIn user." theme="dark"></CabinetCard>
         <CabinetCard photo="/image10.jpg" name="Lina" bio="Hey Juniors! My name is Lina. I'm so excited to be serving as one of your social media managers for this year's junior caucus, and I hope we can play a role in making this year special and memorable for everybody. In school I am a member of the oratorio choir, a part of the bigsib program, a participant in SING! as a media manager, and, of course, a part of the Junior Caucus cabinet. When I'm not studying or in school, you can probably find me creating content for one of the 16 accounts I have on Instagram and tiktok, doing one of the twenty million hobbies I've picked up throughout my life, or picking up another random hobby that I'll probably end up being aggressively mediocre at." theme="dark"></CabinetCard>
+        <CabinetCard photo="/anders.jpg" name="Anders" bio="Hello. My name is Anders. I am a Helvetica enthusiast, student, Avid Traveller (flyporter.com), photographer, and LinkedIn user." theme="dark"></CabinetCard>
     </div>
     </div>
     <Squiggle></Squiggle>

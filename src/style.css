@@ -128,13 +128,32 @@ body{
 
 .upcoming-card{
     background: white;
-    margin: 0 10px 0 10px;
-    color: #7195b1;
+    margin: 0 10px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 22px;
+    border: 2.5px solid #3d6288;
+    box-shadow: 6px 6px 0 #547fa8;
     font-size: 1.3rem;
-    padding: 15px;
-    padding-top: 30px;
+    overflow: hidden;
+    align-self: center;
+}
+
+.upcoming-date{
+    display: block;
+    background: #d4e9f7;
+    color: #176087;
+    font-family: 'Aloja', sans-serif;
+    font-size: 1.55rem;
+    line-height: 1;
+    padding: 16px 14px 12px;
+}
+
+.upcoming-title{
+    display: block;
+    color: #222a38;
+    font-weight: 700;
+    line-height: 1.35;
+    padding: 16px 16px 20px;
 }
 
 .achievement-card > img{

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Nav from "./Nav.tsx";
 import "./style.css"
 function App() {
-  let timelineContent = ['9/19', 'Cornell University x Binghamton University', '9/26', 'Cornell Alumni Workshop', '10/14-15', 'Double Day Open House Bake Sale'];
+  let timelineContent = ['Oct 14-15','Open House Double Day Bake Sale', 'Oct 29','Dr. Ghatan Speaker Event', '~Nov','College Prep Workshop #1'];
   return <>
   <Nav></Nav>
   <Hero title="/hero_title.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/school_background.png')"></Hero>
@@ -28,22 +28,22 @@ function App() {
     <div></div>
     <div></div>
     <div></div>
-    <div className="upcoming-card light"><span style={{fontSize: '1.5rem', color:'#6f95ba'}}>{timelineContent[0]}</span><br></br>{timelineContent[1]}</div>
-    <div className="upcoming-card light"><span style={{fontSize: '1.5rem', color:'#6f95ba'}}>{timelineContent[2]}</span><br></br>{timelineContent[3]}</div>
+    <div className="upcoming-card"><span className="upcoming-date">{timelineContent[0]}</span><span className="upcoming-title">{timelineContent[1]}</span></div>
+    <div className="upcoming-card"><span className="upcoming-date">{timelineContent[2]}</span><span className="upcoming-title">{timelineContent[3]}</span></div>
     <div></div>
     <div></div>
     <div></div>
     <div></div>
-    <div className="upcoming-card light"><span style={{fontSize: '1.5rem', color:'#6f95ba'}}>{timelineContent[4]}</span><br></br>{timelineContent[5]}</div>
+    <div className="upcoming-card"><span className="upcoming-date">{timelineContent[4]}</span><span className="upcoming-title">{timelineContent[5]}</span></div>
   </div>
   </div>
   <Squiggle></Squiggle>
   <div className="achievement-container containers">
   <Heading word="Achievements"></Heading>
   <div className="achievement-card-container">
-    <div className="achievement-card"><img src="/trophy.png"></img><span>$2000 raised</span></div>
+    <div className="achievement-card"><img src="/moneybag.png"></img><span>$0 raised</span></div>
     <div className="achievement-card"><img src="/trophy.png"></img><span>30+ events</span></div>
-    <div className="achievement-card"><img src="/trophy.png"></img><span>6 organizational partnerships</span></div>
+    <div className="achievement-card"><img src="/handshake.png"></img><span>6 organizational partnerships</span></div>
   </div>
   </div>
   <Squiggle></Squiggle>
@@ -58,7 +58,7 @@ function App() {
       <td className="explore-title" colSpan={9} style={{color: '#212C37', textAlign: 'center', fontSize: 'clamp(2.5rem, 8vw, 3.8rem)'}}>Explore More</td>
     </tr>
     <tr>
-      <td colSpan={3} style={{textAlign: 'end', color:'#425870'}}>Sponsor</td>
+      <td colSpan={3} style={{textAlign: 'end', color:'#425870'}}>Sponsors</td>
       <td colSpan={3} style={{textAlign: 'center', color: '#5a6978'}}><Link to="/events">Events</Link></td>
       <td colSpan={3} style={{textAlign: 'start', color: '#36485B'}}><Link to="/jprom">JProm</Link></td>
     </tr>
