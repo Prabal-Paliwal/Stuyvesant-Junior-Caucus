@@ -41,9 +41,9 @@ function App() {
   <div className="achievement-container containers">
   <Heading word="Achievements"></Heading>
   <div className="achievement-card-container">
-    <div className="achievement-card"><img src="/moneybag.png"></img><span>$0 raised</span></div>
-    <div className="achievement-card"><img src="/trophy.png"></img><span>30+ events</span></div>
-    <div className="achievement-card"><img src="/handshake.png"></img><span>6 organizational partnerships</span></div>
+    <div className="achievement-card"><img src="/moneybag.png" alt=""></img><span>$0 raised</span></div>
+    <div className="achievement-card"><img src="/trophy.png" alt=""></img><span>30+ events</span></div>
+    <div className="achievement-card achievement-card-photo"><img src="/shakeshack.jpeg" alt="Shake Shack partnership" width="1200" height="1600"></img><span>6 organizational partnerships</span></div>
   </div>
   </div>
   <Squiggle></Squiggle>
