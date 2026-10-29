@@ -4,8 +4,15 @@ import Squiggle from "./squiggle.tsx"
 import Heading from "./heading.tsx"
 import EventsCard from "./EventsCard.tsx";
 import Nav from "./Nav.tsx";
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 import "./style.css"
-// import CarouselDemo from "./Carousel.tsx";
 
 function Events(){
     return <>
@@ -15,10 +22,14 @@ function Events(){
     <div className="containers">
     <Heading word="Upcoming"></Heading>
     <div className="upcoming-container">
-        <EventsCard date="Oct 14-15" title="Open House Double Day Bake Sale" where=""></EventsCard>
         <EventsCard date="Oct 29" title="Dr. Ghatan Speaker Event" where=""></EventsCard>
         <EventsCard date="~Nov" title="College Prep Workshop #1" where=""></EventsCard>
     </div>
+    </div>
+    <Squiggle></Squiggle>
+    <div className="containers">
+    <Heading word="Photo Booth"></Heading>
+    <PhotoBooth></PhotoBooth>
     </div>
     <Squiggle></Squiggle>
     {/* <div className="containers checker past-event-container">
@@ -28,6 +39,31 @@ function Events(){
     <Squiggle></Squiggle> */}
     <Footer></Footer>
     </>;
+}
+
+const photoBoothPhotos = [
+    { src: "/cabinet-hero.jpg", alt: "Junior Caucus cabinet on the stairs" },
+    { src: "/shakeshack.jpeg", alt: "Junior Caucus at Shake Shack" },
+]
+
+function PhotoBooth(){
+    return <Carousel className="mx-auto w-[min(100%,920px)] px-14" opts={{ align: "start" }}>
+        <CarouselContent>
+            {photoBoothPhotos.map((photo) => (
+                <CarouselItem key={photo.src} className="md:basis-1/2">
+                    <div className="p-1">
+                        <Card className="overflow-hidden py-0">
+                            <CardContent className="p-0">
+                                <img src={photo.src} alt={photo.alt} className="aspect-square w-full object-cover"></img>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+            ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+    </Carousel>
 }
 
 export default Events

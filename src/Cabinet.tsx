@@ -9,7 +9,7 @@ import "./style.css"
 function Cabinet(){
     return <>
     <Nav></Nav>
-    <Hero title="/hero-cabinet.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/school_background.png')"></Hero>
+    <Hero title="/hero-cabinet.png" background_image="linear-gradient(rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.22)), url('/cabinet-hero.jpg')"></Hero>
     <Squiggle></Squiggle>
     <div className="containers">
     <Heading word="Presidents"></Heading>

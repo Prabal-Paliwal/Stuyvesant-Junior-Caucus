@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Nav from "./Nav.tsx";
 import "./style.css"
 function App() {
-  let timelineContent = ['Oct 14-15','Open House Double Day Bake Sale', 'Oct 29','Dr. Ghatan Speaker Event', '~Nov','College Prep Workshop #1'];
+  let timelineContent = ['Oct 29','Dr. Ghatan Speaker Event', '~Nov','College Prep Workshop #1'];
   return <>
   <Nav></Nav>
   <Hero title="/hero_title.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/school_background.png')"></Hero>
@@ -34,7 +34,7 @@ function App() {
     <div></div>
     <div></div>
     <div></div>
-    <div className="upcoming-card"><span className="upcoming-date">{timelineContent[4]}</span><span className="upcoming-title">{timelineContent[5]}</span></div>
+    <div></div>
   </div>
   </div>
   <Squiggle></Squiggle>
