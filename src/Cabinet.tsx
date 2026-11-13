@@ -82,7 +82,7 @@ function Cabinet(){
     <div className="containers">
     <Heading word="IT"></Heading>
     <div className="cabinet-card-container">
-        <CabinetCard photo="/image17.png" name="Prabal" bio="Hi everyone! I'm Prabal. I am the I.T. director of Junior Caucus this year. I am really excited to work with this cabinet to provide online resources for the whole grade. Outside of Caucus, I am co-CTO of HSConnexus and in Varsity Cricket Team. Outside of coding I love to play sports—badminton, cricket and soccer—or stay home and build random projects." theme="dark"></CabinetCard>
+        <CabinetCard photo="/image17.png" name="Prabal" bio="Hi everyone! I'm Prabal. I am the I.T. director of Junior Caucus this year. I am really excited to work with this cabinet to provide online resources for the whole grade. Outside of Caucus, I am co-CTO of HSConnexus and in Varsity Cricket Team. Outside of coding I love to play sports like badminton, cricket and soccer, or stay home and build random projects." theme="dark"></CabinetCard>
     </div>
     </div>
     <Squiggle></Squiggle>

@@ -4,37 +4,47 @@ import Squiggle from "./squiggle.tsx"
 import Heading from "./heading.tsx"
 import { Link } from 'react-router-dom';
 import Nav from "./Nav.tsx";
+import JpromBanner from "./JpromBanner.tsx";
 import "./style.css"
+
+// Edit these to update the homepage "Upcoming" section.
+// featuredEvent is the single big event (college tour / speaker / theater).
+const featuredEvent = { date: 'Dec 12', title: 'College Tour: YaleXBrown', where: '' };
+const upcomingEvents = [
+  { date: 'Nov 15', title: 'College Readiness Workshop', with: 'Columbia QSN' },
+  { date: 'Nov 21', title: 'Humanities Programs Workshop', with: 'Mr. Blumm' },
+];
+
 function App() {
-  let timelineContent = ['~Nov','College Prep Workshop #1'];
   return <>
   <Nav></Nav>
   <Hero title="/hero_title.png" background_image="linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/school_background.png')"></Hero>
   <Squiggle></Squiggle>
+  <JpromBanner></JpromBanner>
   <div className="vision-container containers">
   <Heading word="Our Mission"></Heading>
   <div className="mission-card">
   <p>Our mission as the Junior Caucus is to make Junior Year less stressful and more navigable. In order to achieve this, our Presidents and Directors are planning events including workshops, collaborative partnerships, and college tours with external organizations. We also plan to host many fun community-building events throughout the year including many of our most successful events from last year, such as Movie Nights, Slime Making, and Tote Bag Decorating. If you want to show support, please feel free to attend events!</p>
   <p>Our ultimate goal is to plan the best Junior Prom! Our aim is to ensure that tickets remain affordable so that every student can attend Junior Prom. To do this, we will have many fundraising initiatives planned throughout the year, and we would appreciate any support! Check out the platform to see our planned initiatives! We will continue to work hard throughout the year to support Juniors and ensure an exciting, affordable Junior Prom. Thank you, and here's to an amazing Junior Year!</p>
-  <p className="mission-sign">— Your Junior Caucus<br></br>Elly x Olivia</p>
+  <p className="mission-sign">Your Junior Caucus<br></br>Elly x Olivia</p>
   </div>
   </div>
   <Squiggle></Squiggle>
   <div className="checker containers">
   <Heading word="Upcoming"></Heading>
-  <div className="upcoming-grid ">
-    <div></div>
-    <div><img src="/time-line.png" className="time-line"></img></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div className="upcoming-card"><span className="upcoming-date">{timelineContent[0]}</span><span className="upcoming-title">{timelineContent[1]}</span></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div className="upcoming-featured">
+    <span className="upcoming-featured-tag">Next Big Event</span>
+    <span className="upcoming-featured-date">{featuredEvent.date}</span>
+    <span className="upcoming-featured-title">{featuredEvent.title}</span>
+    {featuredEvent.where && <span className="upcoming-featured-where">{featuredEvent.where}</span>}
+  </div>
+  <div className="upcoming-list">
+    {upcomingEvents.map((event) => (
+      <div className="upcoming-list-card" key={event.date + event.title}>
+        <span className="upcoming-list-date">{event.date}</span>
+        <span className="upcoming-list-title">{event.title}{event.with && <em> · {event.with}</em>}</span>
+      </div>
+    ))}
   </div>
   </div>
   <Squiggle></Squiggle>
